@@ -186,6 +186,27 @@ Item('clothing', function(data, slot)
 	end)
 end)
 
+--shx-idcard
+Item('id_card', function(data, slot)
+    TriggerEvent('shx-idcard:client:showId', slot.metadata)
+end)
+
+Item('police_badge', function(data, slot)
+    TriggerEvent('shx-idcard:client:showPoliceBadge', slot.metadata)
+end)
+
+Item('ems_badge', function(data, slot)
+    TriggerEvent('shx-idcard:client:showEMSBadge', slot.metadata)
+end)
+
+Item('driver_license', function(data, slot)
+    TriggerEvent('shx-idcard:client:showDriverLicense', slot.metadata)
+end)
+
+Item('weaponlicense', function(data, slot)
+    TriggerEvent('shx-idcard:client:showWeaponLicense', slot.metadata)
+end)
+
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item) return getItem(nil, item) end)
